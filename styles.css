@@ -54,6 +54,8 @@ nav li:first-child{
 }
 .sidenav li{
   width: 100%;
+  font-weight: 700;
+  font-style: bold;
 } 
 .sidenav a{
   width: 100%;
