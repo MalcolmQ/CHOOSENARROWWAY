@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,999&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+<style>
+.product-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+.product-card video {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.product-card h4 {
+  margin: 6px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #8F308B;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #553BA5; /* your brand purple */
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1A1A1A; /* charcoal black */
+  margin-bottom: 8px;
+}
+
+.section-header p {
+  font-size: 1rem;
+  color: #666; /* lighter gray for subtitle */
+  font-weight: 400;
+}
+#CTA{
+  text-align: center;
+  padding: 40px 0;
+}
+#CTA p {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 400;
+}
+</style>
+<body>
+    <nav>
+  <ul class="sidenav">
+        <li onclick=hideSidenav()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <!--<li><a href="products.html">Products</a></li>-->
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <ul>
+        <li style="font-weight: bolder;"><a href="index.html">Choose Narrow Way</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile"><a href="products.html">Products</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menu-button" onclick=showSidenav()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul> 
+</nav>
+<section id="Fish">
+<div class="section-header">
+<h2 style="text-align: center; margin-top: 40px;">Fresh & Frozen Seafood🐟</h2>
+<p>Swipe through our selection of fresh and frozen seafood!</p>
+</div>
+<div class="swiper productSwiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <div class="product-card">
+        <img src="images/Red-Snapper-1.jpeg" alt="Red Snapper">
+        <h4>Red Snapper</h4>
+        <p>Great for grills & pepper soup.</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="product-card">
+        <img src="images/Spanish-Mackerel-1.jpeg" alt="Spanish Mackerel">
+        <h4>Spanish Mackerel</h4>
+        <p>Perfect for grills & salads.</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="product-card">
+        <img src="images/Crabs-1.jpeg" alt="Crabs">
+        <h4>Crabs</h4>
+        <p>Fresh and delicious.</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="product-card">
+        <img src="images/Red-Mulletfish-1.jpg.jpg" alt="Red Mullet Fish">
+        <h4>Red Mullet Fish</h4>
+        <p>Great for grilling & frying.</p>
+      </div>
+      </div>
+      <div class="swiper-slide">
+      <div class="product-card">
+        <img src="images/Croaker-Fish-1.jpeg" alt="Croaker Fish">
+        <h4>Croaker Fish</h4>
+        <p>Great for grilling & frying.</p>
+    </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="product-card">
+        <img src="images/Tilapia-2.jpg" alt="Tilapia">
+        <h4>Tilapia</h4>
+        <p>Great for grills & frying.</p>
+      </div>
+      </div>
+    <div class="swiper-slide">
+      <div class="product-card">
+        <img src="images/mackerel-1.jpg" alt="Mackerel">
+        <h4>Blue Mackerel</h4>
+        <p>Great for grilling, frying & soups.</p>
+      </div>
+      </div>
+  </div>
+  <!-- Pagination dots -->
+  <div class="swiper-pagination"></div>
+</div>
+</section>
+<section id="Meat">
+<div class="section-header">
+  <h2 style="text-align: center; margin-top: 40px;">Fresh & Frozen Meat 🥩</h2>
+  <p>Discover our selection of high-quality fresh and frozen meats.</p>
+</div>
+<div class="swiper productSwiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <div class="product-card">
+        <img src="images/Fresh-Goat-Meat.jpg" alt="Fresh Goat Meat">
+        <h4>Fresh Goat Meat</h4>
+        <p>A staple for stews & soups.</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="product-card">
+        <img src="images/Cow-skins.jpeg" alt="Cow Skins">
+        <h4>Cow Skins</h4>
+        <p>Great addition to your favorite soups & stews</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="product-card">
+        <img src="images/Beef-Oxtail.jpg" alt="Beef Oxtail">
+        <h4>Beef Oxtail</h4>
+        <p>With skin and without. Great for stews & soups, especially when slow-cooked.</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="product-card">
+        <img src="images/Beef-Meat-1.jpeg" alt="Beef">
+        <h4>Beef</h4>
+        <p>Great for grills, stews & soups.</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="product-card">
+        <img src="images/Turkey-Wings-1.jpg" alt="Turkish Wings">
+        <h4>Turkey Wings</h4>
+        <p>Great for grills, and baked.</p>
+      </div>
+    </div>
+
+  </div>
+<!-- Pagination dots -->
+  <div class="swiper-pagination"></div>
+</div>
+  
+</section>
+<section id="Vegetables">  
+<div class="section-header">
+  <h2 style="text-align: center; margin-top: 40px;">Fresh Vegetables & Produce 🥦</h2>
+  <p>Explore our variety of fresh vegetables and produce.</p>
+</div>
+<div class="swiper productSwiper">  
+    <div class="swiper-wrapper">
+    
+        <div class="swiper-slide">
+        <div class="product-card">
+            <img src="images/Peppers.jpg" alt="Habanero Peppers">
+            <h4>Habanero Peppers</h4>
+            <p>A staple for stews & soups & many other dishes</p>
+        </div>
+        </div>
+    
+        <div class="swiper-slide">
+        <div class="product-card">
+            <img src="images/Tomatoes-1.jpeg" alt="Tomatoes">
+            <h4>Tomatoes</h4>
+            <p>Perfect for salads, sauces & stews.</p>
+        </div>
+        </div>
+    
+        <div class="swiper-slide">
+        <div class="product-card">
+            <img src="images/Okra-1.jpg" alt="Okra">
+            <h4>Okra</h4>
+            <p>Great for stews, fried dishes & okra soup.</p>
+        </div>
+        </div>
+    <div class="swiper-slide">
+        <div class="product-card">
+            <img src="images/Tamarind-2.jpeg" alt="Tamarind">
+            <h4>Tamarind</h4>
+            <p>Great for juices or Tamarind balls or just eat it raw</p>
+        </div>
+        </div>
+      <div class="swiper-slide">
+        <div class="product-card">
+            <img src="images/Yams-1.jpeg" alt="Yams">
+            <h4>Yams</h4>
+            <p>Great for stews, fries & soups.</p>
+        </div>
+        </div>
+      <div class="swiper-slide">
+        <div class="product-card">
+            <img src="images/Grapes-1.jpeg" alt="Grapes">
+            <h4>Grapes</h4>
+            <p>Great for snacking, juices & desserts.</p>
+        </div>
+        </div>
+      <div class="swiper-slide">
+        <div class="product-card">
+            <img src="images/Chilipeppers-1.jpeg" alt="Chili Peppers">
+            <h4>Chili Peppers</h4>
+            <p>Great for adding heat to stews, salsas & many dishes.</p>
+        </div>
+        </div>
+      <div class="swiper-slide">
+        <div class="product-card">
+            <img src="images/Onions-1.jpg" alt="Onions">
+            <h4>Onions</h4>
+            <p>Great for stews, salads & many dishes.</p>
+        </div>
+        </div>
+    <div class="swiper-slide">
+        <div class="product-card">
+            <img src="images/Garlic-1.jpg" alt="Garlic">
+            <h4>Garlic</h4>
+            <p>Great for stews, sauces & many dishes.</p>
+        </div>
+        </div>
+    </div>
+    
+    <!-- Pagination dots -->
+    <div class="swiper-pagination"></div>
+</div>
+</section>
+<section id="Spices">
+<div class="section-header">
+    <h2 style="text-align: center; margin-top: 40px;">Spices & Seasonings 🌶️</h2>
+    <p>Discover our range of authentic spices and seasonings.</p>
+</div>
+<div class="swiper productSwiper">  
+    <div class="swiper-wrapper">
+    
+        <div class="swiper-slide">
+        <div class="product-card">
+            <img src="images/Waakye-Leaves-Powder.jpeg" alt="Waakye Leaves Powder">
+            <h4>Waakye Leaves Powder</h4>
+            <p>Used for Waakye preparation.</p>
+        </div>
+        </div>
+    
+        <div class="swiper-slide">
+        <div class="product-card">
+            <img src="images/Kelewele-Seasoning.jpeg" alt="Kelewele Seasoning">
+            <h4>Kelewele Seasoning</h4>
+            <p>Perfect for seasoning Kelewele.</p>
+        </div>
+        </div>
+    
+        <div class="swiper-slide">
+        <div class="product-card">
+            <img src="images/Mixed-Spices.jpeg" alt="Mixed Spices">
+            <h4>Mixed Spices</h4>
+            <p>Great for adding flavor to various dishes.</p>
+        </div>
+        </div>
+    
+    </div>
+    
+    <!-- Pagination dots -->
+    <div class="swiper-pagination"></div>
+    <br/>
+    </div>
+    <section id="CTA">
+        <div class="cta-content">
+            <h2>See Anything you Like?</h2>
+            <p>Gives us a call at <a href="tel:201-668-7131">201-668-7131</a>, or visit our store at <a href="https://www.google.com/maps?q=1174+Stuyvesant+Ave,+Irvington,+NJ+07111" target="_blank">1174 Stuyvesant Ave, Irvington, NJ 07111.</a></p>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

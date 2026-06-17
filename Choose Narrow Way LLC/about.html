@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Local Cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,999&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <ul class="sidenav">
+        <li onclick=hideSidenav()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <ul>
+        <li style="font-weight: bolder;"><a href="index.html">Choose Narrow Way</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile"><a href="products.html">Products</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menu-button" onclick=showSidenav()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul> 
+</nav>
+<div class="aboutTitle">
+    <h1>About Us</h1>
+</div>
+<div class="break"></div>
+<section class="about-content">
+    <div class="about-text">
+        <h2>Who We Are</h2>
+        <p>
+            Choose Narrow Way LLC is a modern African and Caribbean market rooted in the vibrant culinary traditions of West Africa, East Africa, and the Caribbean. We provide authentic groceries for families and food lovers seeking real, hard‑to‑find ingredients—from fresh produce and halal meats to premium spices, grains, and everyday pantry staples. Our shelves feature customer favorites like Jamaican hot peppers, callaloo, plantain, African yams, coco yams, Ghanaian shito, Nigerian egusi, oxtail, goat meat, cow feet, fresh fish, frozen fish, and a wide selection of dried seafood. Whether you're preparing a traditional dish or discovering new flavors, we’re committed to offering quality, authenticity, and a shopping experience that feels like home. Choose the Narrow Way—not the broad way.
+        </p>
+    </div>
+
+    <div class="about-images">
+        <img src="images/Choose-Narrow-Way-Store.jpeg" alt="African food market">
+        <img src="images/Flags.jpg" alt="Flags of Carribbean and African Countries">
+    </div>
+</section>
+</body>
+<script src="script.js">
+  </script>
+</html>
